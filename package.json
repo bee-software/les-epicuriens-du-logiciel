@@ -1,0 +1,16 @@
+{
+  "name": "les-epicuriens-du-logiciel",
+  "version": "1.0.0",
+  "description": "Notre site web",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node --captureExceptions ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:fperron/les-epicuriens-du-logiciel.git"
+  },
+  "author": "Les Epicuriens du logiciel",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
