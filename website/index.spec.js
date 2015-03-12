@@ -24,4 +24,11 @@ describe('The home page', function () {
             done();
         });
     });
+
+    it('Page title is Les Épicuriens du logiciel', function (done) {
+        browser.visit(homePage).then(function () {
+            expect(browser.text('title')).toEqual('Les Épicuriens du logiciel');
+            done();
+        });
+    });
 });
