@@ -16,7 +16,7 @@
     "http-server": "^0.7.5"
   },
   "scripts": {
-    "start": "node_modules/http-server/bin/http-server website -p 5001",
+    "start": "node_modules/http-server/bin/http-server website -p 80",
     "test": "node_modules/jasmine-node/bin/jasmine-node --captureExceptions .",
     "deploy": "node build/deploy.js"
   }
