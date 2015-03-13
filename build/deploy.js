@@ -17,11 +17,3 @@ api.domainGetAll(function(error, droplets){
 //api.dropletNew(dropletName, size521MB, imageUbuntu1404x64, regionNewYork3, francoisSshKey, function (error, droplets) {
 //    console.log(droplets);
 //});
-
-// ssh root@ip
-// apt-get update
-// curl -sL https://deb.nodesource.com/setup | sudo bash -
-// apt-get install -y git nodejs npm
-// git clone https://fperron@bitbucket.org/fperron/les-epicuriens-du-logiciel.git
-// screen
-// npm run

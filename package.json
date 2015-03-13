@@ -16,8 +16,11 @@
     "http-server": "^0.7.5"
   },
   "scripts": {
-    "start": "node_modules/http-server/bin/http-server website -p 80",
+    "start": "node_modules/http-server/bin/http-server website -p 5001",
     "test": "node_modules/jasmine-node/bin/jasmine-node --captureExceptions .",
-    "deploy": "node build/deploy.js"
+    "deploy-test": "git push test master",
+    "deploy-prod": "git push prod master",
+    "run-test": "node_modules/http-server/bin/http-server website -p 8080",
+    "run-prod": "node_modules/http-server/bin/http-server website -p 80"
   }
 }
