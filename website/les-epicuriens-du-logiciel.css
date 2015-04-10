@@ -1,3 +1,4 @@
+@import url("support/css/normalize.css");
 @import url("support/css/clean-elements.css");
 @import url("support/css/content.css");
 @import url("support/css/grid.css");
@@ -77,6 +78,7 @@ h2 {
 .client-text p {
     line-height: 1.5rem;
     font-weight: 300;
+    /*color: #404040;*/
 }
 
 .separator {
