@@ -5,93 +5,99 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="les-epicuriens-du-logiciel.css">
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:800,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="content">
-    <div class="jumbotron row">
+<section class="jumbotron">
+    <div class="jumbotron__space row">
         <div class="five columns logo">
-            <div class="company">
-                <h1 class="logo__texte">Les Épicuriens</h1>
-                <h1 class="logo__texte">du logiciel</h1>
-            </div>
+            <h1 class="logo__texte">Les Épicuriens</h1>
+            <h1 class="logo__texte">du logiciel</h1>
         </div>
         <div class="seven columns banniere">
             <h1 class="baniere__slogan">Nous créons pour vous des logiciels brilliants</h1>
             <h1 class="baniere__slogan">qui vous aident quotidiennement</h1>
-            <a class="baniere__lien" href="/contact/">
+            <a class="baniere__lien" href="mailto:hello@les-epicuriens-du-logiciel.ca">
                 <p class="baniere__lien-text">Intéressez à travailler avec nous?</p>
             </a>
         </div>
     </div>
-    <div class="row client-block">
-        <div class="one columns offset by-one">
-            <img class="client-image" src="support/images/entreprise.jpg" alt="entreprise">
+</section>
+<section class="client">
+    <div class="container">
+        <div class="row">
+            <div class="one columns">
+                <img class="client__image" src="support/images/entreprise.jpg" alt="entreprise">
+            </div>
+            <div class="five columns client__description">
+                <h2>Entreprises</h2>
+                <p>
+                    Demandez un devis gratuit. Nous passons une journée ensemble. Nous vous donnons une réponse le jour même.
+                    Nous y consacrons un mois. Nous échangeons continuellement avec vous. Vous recevez un logiciel 100% utile.
+                </p>
+            </div>
+            <div class="one columns">
+                <img class="client__image" src="support/images/osbl.jpg" alt="osbl">
+            </div>
+            <div class="five columns client__description">
+                <h2>Organismes sans but lucratif</h2>
+                <p>
+                    C’est gratuit. Nous passons une journée ensemble. Nous identifions un objectif.
+                    Nous y consacrons un mois. Nous avons une seule contrainte, notre calendrier.
+                </p>
+            </div>
         </div>
-        <div class="four columns client-text">
-            <h2>Entreprises</h2>
-            <p>
-                Demandez un devis gratuit. Nous passons une journée ensemble. Nous vous donnons une réponse le jour même.
-                Nous y consacrons un mois. Nous échangeons continuellement avec vous. Vous recevez un logiciel 100% utile.
-            </p>
-        </div>
-        <div class="one columns">
-            <img class="client-image" src="support/images/osbl.jpg" alt="osbl">
-        </div>
-        <div class="four columns client-text">
-            <h2>Organismes sans but lucratif</h2>
-            <p>
-                C’est gratuit. Nous passons une journée ensemble. Nous identifions un objectif.
-                Nous y consacrons un mois. Nous avons une seule contrainte, notre calendrier.
-            </p>
-        </div>
-    </div>
-    <div class="row client-block">
-        <div class="one columns offset by-one">
-            <img class="client-image" src="support/images/apprendre.jpg" alt="entreprise">
-        </div>
-        <div class="four columns client-text">
-            <h2>Programmeurs</h2>
-            <p>
-                Participez à une de nos créations. Apprenez en développant. Restez autant que vous le voulez.
-            </p>
-        </div>
-    </div>
-    <div class="row value-block">
-        <div class="four columns">
-            <h2>Nous sommes agile</h2>
-            <p>
-                Nous savons construire rapidement des logiciels très spécialisés.
-                Nous livrons des logiciels utiles à chaque mois afin de vous permettre de gérer vos investissements.
-            </p>
-        </div>
-        <div class="four columns">
-            <h2>Nous sommes des experts</h2>
-            <p>
-                Nous écrivons des logiciels testés et faciles à maintenir vous apportant des gains à long terme.
-                Si nous faisons une erreur (ie.bogue), nous la corrigeons rapidement et gratuitement.
-            </p>
-        </div>
-        <div class="four columns">
-            <h2>Nous aimons développer des logiciels</h2>
-            <p>
-                Nous aimons créer des logiciels utiles et simples.
-                Nous aimons transmettre ce que nous savons faire.
-            </p>
+        <div class="row client">
+            <div class="one columns">
+                <img class="client__image" src="support/images/apprendre.jpg" alt="entreprise">
+            </div>
+            <div class="five columns client__description">
+                <h2>Programmeurs</h2>
+                <p>
+                    Participez à une de nos créations. Apprenez en développant. Restez autant que vous le voulez.
+                </p>
+            </div>
         </div>
     </div>
-    <footer class="footer">
-        <nav class="footer-nav">
-            <a href="/nouvelles/">Nouvelles</a>
-            <a href="/contact/">Contactez Nous</a>
-            <a href="/equipe/">L'Équipe</a>
-            <a href="/clients/">Nos Clients</a>
-        </nav>
-        <p>
-            L’épicurisme est axé sur la recherche d’un bonheur et d’une sagesse dont le but est l’atteinte de la tranquillité de l’âme.
-        </p>
-    </footer>
-</div>
+</section>
+<section class="valeur">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <h2>Nous sommes agile</h2>
+                <p>
+                    Nous savons construire rapidement des logiciels très spécialisés.
+                    Nous livrons des logiciels utiles à chaque mois afin de vous permettre de gérer vos investissements.
+                </p>
+            </div>
+            <div class="four columns">
+                <h2>Nous sommes des experts</h2>
+                <p>
+                    Nous écrivons des logiciels testés et faciles à maintenir vous apportant des gains à long terme.
+                    Si nous faisons une erreur (ie.bogue), nous la corrigeons rapidement et gratuitement.
+                </p>
+            </div>
+            <div class="four columns">
+                <h2>Nous aimons développer des logiciels</h2>
+                <p>
+                    Nous aimons créer des logiciels utiles et simples.
+                    Nous aimons transmettre ce que nous savons faire.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <!--<nav class="footer__nav">-->
+        <!--<a href="/nouvelles/">Nouvelles</a>-->
+        <!--<a href="/contact/">Contactez Nous</a>-->
+        <!--<a href="/equipe/">L'Équipe</a>-->
+        <!--<a href="/clients/">Nos Clients</a>-->
+    <!--</nav>-->
+    <p>
+        L’épicurisme est axé sur la recherche d’un bonheur et d’une sagesse dont le but est l’atteinte de la tranquillité de l’âme.
+    </p>
+</footer>
 </body>
 </html>

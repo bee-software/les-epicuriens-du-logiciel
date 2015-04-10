@@ -9,26 +9,36 @@ describe('The home page', function () {
     var homePage = 'http://localhost:5001';
     var server;
 
-    beforeEach(function() {
+    beforeEach(function (done) {
         server = Server.createServer({root: "website"});
         server.listen(5001);
+        browser.visit(homePage, done);
     });
 
-    afterEach(function() {
-       server.close();
+    afterEach(function () {
+        server.close();
     });
 
-    it('displays Hello World', function (done) {
-        browser.visit(homePage).then(function () {
-            expect(browser.text('#hello')).toEqual('Hello World');
-            done();
-        });
+    it('Title is Les Épicuriens du logiciel', function () {
+        browser.assert.text('title', 'Les Épicuriens du logiciel');
     });
 
-    it('Page title is Les Épicuriens du logiciel', function (done) {
-        browser.visit(homePage).then(function () {
-            expect(browser.text('title')).toEqual('Les Épicuriens du logiciel');
-            done();
-        });
+    //it('Has a header with class header', function () {
+    //   browser.assert.className('header', 'header');
+    //});
+
+    it('Has the jumbotron section', function () {
+        browser.assert.element('section.jumbotron');
+    });
+
+    it('Has the client section', function () {
+        browser.assert.element('section.client');
+    });
+
+    it('Has the valeur section', function () {
+        browser.assert.element('section.valeur')
+    });
+    it('Has a footer', function () {
+        browser.assert.element('footer');
     });
 });

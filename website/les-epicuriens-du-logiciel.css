@@ -1,16 +1,30 @@
 @import url("support/css/normalize.css");
 @import url("support/css/clean-elements.css");
-@import url("support/css/content.css");
+@import url("support/css/container.css");
 @import url("support/css/grid.css");
 
+html {
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 h2 {
-    font-size: 21px;
     font-weight: 400;
-    padding-bottom: 1em;
+    font-size: 21px;
+    padding-bottom: 21px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 .jumbotron {
     background-image: url(support/images/jumbotron.jpg);
+    height: 300px;
+}
+
+.jumbotron__space {
     height: 300px;
 }
 
@@ -37,7 +51,7 @@ h2 {
 .baniere__slogan {
     font-weight: 400;
     font-size: 36px;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #ffffff;
 }
 
@@ -47,7 +61,7 @@ h2 {
     text-decoration: none;
     border:1px solid #ffffff;
     display: inline-block;
-    margin: 1em 0;
+    margin: 16px 0;
     padding: 16px 48px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -66,61 +80,38 @@ h2 {
     transition: background-color 0.3s ease-in-out;
 }
 
-.client-block {
-    margin: 4em 0 0 0;
+.client {
+    margin: 50px 0 20px 0;
 }
 
-.client-image {
+.client__image {
     max-width: 100px;
     height: auto;
 }
 
-.client-text p {
-    line-height: 1.5rem;
-    font-weight: 300;
-    /*color: #404040;*/
+.client__description {
+    padding: 0 30px;
 }
 
-.separator {
-    width: 96%;
-    margin: 2em auto;
-    border: solid #f5f5f5;
-    border-width: 1px 0 0 0;
-}
-
-.value-block {
-    margin: 4em 0 0 0;
-    padding: 4em 50px 4em 50px;
+.valeur {
+    padding: 50px 0;
     background-color: #f9f7f6;
 }
 
-.value-block p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.6;
-    padding-bottom: 1em;
-}
-
 .footer {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 50px 0 50px 0;
     text-align: center;
+    margin: 50px 0 50px 0;
 }
 
-.footer-nav a {
-    display: inline-block;
-    padding: 18px 0;
+.footer__nav a {
     font-size: 18px;
-    margin: 0 1.5em;
     text-decoration: none;
     color: #238bad;
+    display: inline-block;
+    padding: 18px 0;
+    margin: 0 25px;
 }
 
 .footer p {
-    font-weight: 300;
     margin: 20px auto;
-
 }

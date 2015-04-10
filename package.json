@@ -9,6 +9,7 @@
   "author": "Les Epicuriens du logiciel",
   "devDependencies": {
     "digitalocean-api": "^0.1.1",
+    "jasmine": "^2.2.1",
     "jasmine-node": "^1.14.5",
     "zombie": "^2.5.1"
   },
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "start": "node_modules/http-server/bin/http-server website -p 5001",
-    "test": "node_modules/jasmine-node/bin/jasmine-node --captureExceptions .",
+    "test": "node_modules/.bin/jasmine",
     "deploy-test": "git push test master",
     "deploy-prod": "git push prod master",
     "run-test": "node_modules/http-server/bin/http-server website -p 8080",
