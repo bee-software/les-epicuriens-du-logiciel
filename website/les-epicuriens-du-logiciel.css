@@ -21,6 +21,7 @@ p {
 
 .jumbotron {
     background-image: url(support/images/jumbotron.jpg);
+    background-position: center;
     height: 300px;
 }
 
@@ -74,7 +75,7 @@ p {
 }
 
 .baniere__lien:hover {
-    background-color: #30739d;
+    background-color: #4482AB;
     -webkit-transition: background-color 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
