@@ -2,4 +2,5 @@
 npm test
 
 # Deploy on digital ocean
-npm deploy
+npm run deploy-test
+npm run deploy-prod

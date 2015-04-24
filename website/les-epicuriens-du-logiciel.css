@@ -180,11 +180,13 @@ p {
     }
 
     .banniere {
+        margin-top: 25px;
         text-align:center;
     }
 
     .baniere__slogan {
         font-size: 18px;
+        line-height: 1;
     }
 
     .baniere__lien p {
