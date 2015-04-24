@@ -7,21 +7,23 @@
     "url": "git@bitbucket.org:fperron/les-epicuriens-du-logiciel.git"
   },
   "author": "Les Epicuriens du logiciel",
-  "devDependencies": {
-    "digitalocean-api": "^0.1.1",
-    "jasmine": "^2.2.1",
-    "jasmine-node": "^1.14.5",
-    "zombie": "^2.5.1"
-  },
   "dependencies": {
     "http-server": "^0.7.5",
     "normalize.css": "^3.0.2"
   },
+  "devDependencies": {
+    "digitalocean-api": "^0.1.1",
+    "jasmine": "^2.2.1",
+    "jasmine-node": "^1.14.5",
+    "zombie": "^2.5.1",
+    "jshint": "latest"
+  },
   "scripts": {
-    "start": "node_modules/http-server/bin/http-server website -p 5001",
+    "lint": "jshint **.js",
     "test": "node_modules/.bin/jasmine",
     "deploy-test": "git push test master",
     "deploy-prod": "git push prod master",
+    "run-dev": "node_modules/http-server/bin/http-server website -p 5001",
     "run-test": "node_modules/http-server/bin/http-server website -p 8080",
     "run-prod": "node_modules/http-server/bin/http-server website -p 80"
   }
