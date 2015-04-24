@@ -156,3 +156,75 @@ p {
 .footer p {
     margin: 20px auto;
 }
+
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .jumbotron {
+        height: 250px;
+    }
+
+    .jumbotron__space {
+        height: 250px;
+    }
+
+    .logo__texte {
+        font-size: 32px;
+    }
+
+    .banniere {
+        text-align:center;
+    }
+
+    .baniere__slogan {
+        font-size: 18px;
+    }
+
+    .baniere__lien p {
+        font-size: 18px;
+    }
+
+    .baniere__lien {
+        padding: 8px 24px;
+    }
+
+    .client {
+        margin: 0;
+    }
+
+    .client__image {
+        max-width: 50px;
+    }
+
+    .client__description p {
+        margin-bottom: 20px;
+    }
+
+    .valeur {
+        padding: 0;
+     }
+
+    .valeur h2 {
+        margin-top: 20px;
+    }
+
+    .portfolio{
+        margin-top: 10px;
+    }
+
+    .portfolio__title {
+        font-size: 18px;
+    }
+
+    .portfolio__item {
+        max-width: 150px;
+        margin-left: 100px;
+    }
+}

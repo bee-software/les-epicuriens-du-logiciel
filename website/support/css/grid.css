@@ -100,3 +100,53 @@
 .columns.twelve {
     width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+    .columns.one {
+        width: 17%;
+    }
+
+    .columns.two {
+        width: 33%;
+    }
+
+    .columns.three {
+        width: 50%;
+    }
+
+    .columns.four {
+        width: 66.66%;
+    }
+
+    .columns.five {
+        width: 83%;
+    }
+
+    .columns.six {
+        width: 100%;
+    }
+
+    .columns.seven {
+        width: 100%;
+    }
+
+    .columns.eight {
+        width: 100%;
+    }
+
+    .columns.nine {
+        width: 100%;
+    }
+
+    .columns.ten {
+        width: 100%;
+    }
+
+    .columns.eleven {
+        width: 100%;
+    }
+
+    .columns.twelve {
+        width: 100%;
+    }
+}
