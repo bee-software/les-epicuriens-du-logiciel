@@ -12,15 +12,21 @@
     "normalize.css": "^3.0.2"
   },
   "devDependencies": {
+    "clean-css": "latest",
     "digitalocean-api": "^0.1.1",
     "jasmine": "^2.2.1",
     "jasmine-node": "^1.14.5",
-    "zombie": "^2.5.1",
-    "jshint": "latest"
+    "jshint": "latest",
+    "live-reload": "latest",
+    "zombie": "^2.5.1"
   },
   "scripts": {
+    "env": "env",
     "lint": "jshint **.js",
+    "build:css": "cat website/support/css/normalize.css website/support/css/clean-elements.css website/support/css/container.css website/support/css/grid.css website/index.css | cleancss -o website/les-epicuriens-du-logiciel.css",
+    "livereload": "live-reload website/",
     "test": "node_modules/.bin/jasmine",
+    "pretest": "npm run lint",
     "deploy-test": "git push test master",
     "deploy-prod": "git push prod master",
     "run-dev": "node_modules/http-server/bin/http-server website -p 5001",
