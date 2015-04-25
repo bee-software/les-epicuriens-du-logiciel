@@ -15,21 +15,27 @@
     "clean-css": "latest",
     "digitalocean-api": "^0.1.1",
     "jasmine": "^2.2.1",
-    "jasmine-node": "^1.14.5",
     "jshint": "latest",
-    "live-reload": "latest",
     "zombie": "^2.5.1"
   },
   "scripts": {
+    "clean":"rm -rf dist/*",
+
+    "prebuild": "npm run clean -s",
+    "build":"npm run build:css -s && npm run build:html -s && npm run build:images -s",
+    "build:css": "cleancss website/les-epicuriens-du-logiciel.css > dist/les-epicuriens-du-logiciel.css",
+    "build:html": "cp -a website/index.html dist/index.html",
+    "build:images": "cp -a website/support dist/",
+
     "lint": "jshint **.js",
-    "build:css": "cleancss website/index.css > website/les-epicuriens-du-logiciel.css",
-    "livereload": "live-reload website/",
-    "test": "node_modules/.bin/jasmine",
     "pretest": "npm run lint",
+    "test": "jasmine",
+
     "deploy:test": "git push test master",
     "deploy:prod": "git push prod master",
-    "run-dev": "node_modules/http-server/bin/http-server website -p 5001",
-    "run-test": "node_modules/http-server/bin/http-server website -p 8080",
-    "run-prod": "node_modules/http-server/bin/http-server website -p 80"
+
+    "serve:dev":  "node_modules/http-server/bin/http-server dist -p 5001",
+    "serve:test": "node_modules/http-server/bin/http-server dist -p 8080",
+    "serve:prod": "node_modules/http-server/bin/http-server dist -p 80"
   }
 }
