@@ -15,7 +15,7 @@ p {
 }
 
 .jumbotron {
-    background-image: url(support/images/jumbotron.jpg);
+    background-image: url(../support/images/jumbotron.jpg);
     background-position: center;
     height: 300px;
 }
