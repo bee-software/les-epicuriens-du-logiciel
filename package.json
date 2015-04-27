@@ -42,8 +42,8 @@
     "deploy:test": "git push test master",
     "deploy:prod": "git push prod master",
 
-    "serve:dev":  "node_modules/http-server/bin/http-server dist -p 5001",
-    "serve:test": "node_modules/http-server/bin/http-server dist -p 8080",
-    "serve:prod": "node_modules/http-server/bin/http-server dist -p 80"
+    "serve:dev":  "node_modules/http-server/bin/http-server dist -p 5001 -d false -o",
+    "serve:test": "node_modules/http-server/bin/http-server dist -p 8080 -d false",
+    "serve:prod": "node_modules/http-server/bin/http-server dist -p 80 -d false"
   }
 }
