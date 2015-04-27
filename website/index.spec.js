@@ -1,44 +1,42 @@
-"use strict";
+(function () {
+    "use strict";
 
-var Browser = require('zombie');
-var Server = require('http-server');
+    var Browser = require('zombie');
+    var Server = require('http-server');
 
-describe('The home page', function () {
+    describe('The home page', function () {
 
-    var browser = new Browser();
-    var homePage = 'http://localhost:5001';
-    var server;
+        var browser = new Browser();
+        var homePage = 'http://localhost:5001';
+        var server;
 
-    beforeEach(function (done) {
-        server = Server.createServer({root: "website"});
-        server.listen(5001);
-        browser.visit(homePage, done);
+        beforeEach(function (done) {
+            server = Server.createServer({root: "dist"});
+            server.listen(5001);
+            browser.visit(homePage, done);
+        });
+
+        afterEach(function () {
+            server.close();
+        });
+
+        it('Title is Les Épicuriens du logiciel', function () {
+            browser.assert.text('title', 'Les Épicuriens du logiciel');
+        });
+
+        it('Has the jumbotron section', function () {
+            browser.assert.element('section.jumbotron');
+        });
+
+        it('Has the client section', function () {
+            browser.assert.element('section.client');
+        });
+
+        it('Has the valeur section', function () {
+            browser.assert.element('section.valeur');
+        });
+        it('Has a footer', function () {
+            browser.assert.element('footer');
+        });
     });
-
-    afterEach(function () {
-        server.close();
-    });
-
-    it('Title is Les Épicuriens du logiciel', function () {
-        browser.assert.text('title', 'Les Épicuriens du logiciel');
-    });
-
-    //it('Has a header with class header', function () {
-    //   browser.assert.className('header', 'header');
-    //});
-
-    it('Has the jumbotron section', function () {
-        browser.assert.element('section.jumbotron');
-    });
-
-    it('Has the client section', function () {
-        browser.assert.element('section.client');
-    });
-
-    it('Has the valeur section', function () {
-        browser.assert.element('section.valeur')
-    });
-    it('Has a footer', function () {
-        browser.assert.element('footer');
-    });
-});
+}());

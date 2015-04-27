@@ -35,7 +35,7 @@
     "build:html": "cp -a website/index.html dist/index.html",
     "build:images": "cp -a website/support dist/",
 
-    "lint": "jshint **.js",
+    "lint": "jshint **/*.js",
     "pretest": "npm run lint -s",
     "test": "jasmine",
 
