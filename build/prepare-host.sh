@@ -13,17 +13,23 @@ create_git_repo() {
     mkdir ${project}-${env}-repo
     cd ${project}-${env}-repo
     git init --bare
-    echo "#!/bin/bash
-    git --work-tree=/root/${project}-${env} --git-dir=/root/${project}-${env}-repo checkout -f" > hooks/post-receive
+    echo "
+    #!/bin/bash
+    git --work-tree=/root/${project}-${env} --git-dir=/root/${project}-${env}-repo checkout -f
+    cd /root/${project}-${env}
+    npm run build
+    cd -
+    "> hooks/post-receive
     chmod +x hooks/post-receive
     cd -
 }
 
-install_git_and_node
+# install_git_and_node
 create_git_repo les-epicuriens-du-logiciel test
 create_git_repo les-epicuriens-du-logiciel prod
 
 
+# Run localy
 # git remote add test ssh://root@45.55.185.156/root/les-epicuriens-du-logiciel-test-repo
 # git remote add prod ssh://root@45.55.185.156/root/les-epicuriens-du-logiciel-prod-repo
 # ssh root@45.55.185.156 'bash -s' < prepare-host.sh
