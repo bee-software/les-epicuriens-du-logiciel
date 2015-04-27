@@ -1,5 +1,6 @@
 .idea/workspace.xml
 .bin
+dist
 npm-debug.log
 
 # rebuild with 'npm rebuild'

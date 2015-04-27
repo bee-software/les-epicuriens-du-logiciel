@@ -27,7 +27,7 @@
   },
 
   "scripts": {
-    "clean":"rm -rf dist/*",
+    "clean":"rm -rf dist && mkdir dist",
 
     "prebuild": "npm run clean -s",
     "build":"npm run build:css -s && npm run build:html -s && npm run build:images -s",
