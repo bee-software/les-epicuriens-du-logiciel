@@ -19,10 +19,10 @@
   },
 
   "devDependencies": {
-    "clean-css": "latest",
     "digitalocean-api": "^0.1.1",
+    "clean-css": "^3.2.5",
+    "jshint": "^2.7.0",
     "jasmine": "^2.2.1",
-    "jshint": "latest",
     "zombie": "^2.5.1"
   },
 
@@ -36,8 +36,8 @@
     "build:images": "cp -a website/support dist/",
 
     "lint": "jshint **/*.js",
-    "pretest": "npm run lint -s",
-    "test": "jasmine",
+    "pretest": "npm run lint -s && npm build -s",
+    "test": "jasmine JASMINE_CONFIG_PATH=build/jasmine.json",
 
     "deploy:test": "git push test master",
     "deploy:prod": "git push prod master",
