@@ -36,7 +36,7 @@
     "build:images": "cp -a src/support dist/",
 
     "lint": "jshint **/*.js",
-    "pretest": "npm run lint -s && npm build",
+    "pretest": "npm run lint -s && npm run build -s",
     "test": "jasmine JASMINE_CONFIG_PATH=build/jasmine.json",
 
     "deploy:test": "git push test master",
