@@ -5,7 +5,7 @@
   "author": "Les Epicuriens du logiciel",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:fperron/les-epicuriens-du-logiciel.git"
+    "url": "git@github.com:les-epicuriens-du-logiciel/les-epicuriens-du-logiciel.git"
   },
   "engines": {
     "node": "0.10.36"
