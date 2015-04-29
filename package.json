@@ -45,6 +45,8 @@
     "deploy:prod": "git push prod master",
     "postdeploy:prod": "URL='http://les-epicuriens-du-logiciel.ca' jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
 
+    "rollback:dev": "mkdir $1",
+
     "serve:dev":  "http-server dist -p 5001 -d false -o",
     "serve:test": "http-server dist -p 8080 -d false",
     "serve:prod": "http-server dist -p 80 -d false"
