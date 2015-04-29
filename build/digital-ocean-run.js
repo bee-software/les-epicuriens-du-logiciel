@@ -4,8 +4,8 @@
     var DigitalOceanAPI = require('digitalocean-api');
     var Droplet = require('./droplet-command.js');
 
-    var apiKey = '88a6bf392b09d41fdf78c5f6f627a5a9';
-    var clientId = 'iiTHjmRrCDiKSE9CGVSjC';
+    var apiKey = process.env.DIGITAL_OCEAN_APIKEY;
+    var clientId = process.env.DIGITAL_OCEAN_CLIENTID;
     var api = new DigitalOceanAPI(clientId, apiKey);
 
     var droplet = new Droplet(api);
