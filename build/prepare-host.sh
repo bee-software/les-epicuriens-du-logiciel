@@ -15,7 +15,7 @@ create_git_repo() {
     git init --bare
     echo "
     #!/bin/bash
-    git --work-tree=/root/${project}-${env} --git-dir=/root/${project}-${env}-repo checkout -f
+    git --work-tree=/root/${project}-${env} --git-dir=/root/${project}-${env}-repo checkout master -f
     cd /root/${project}-${env}
     npm run build
     cd -
