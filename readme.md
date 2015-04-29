@@ -6,7 +6,7 @@
 ## Setup host
 
 1. Create droplet with `node build/digital-ocean-run.js`
-2. App remote repos
+2. Add remote repos
     - `git remote add test ssh://root@les-epicuriens-du-logiciel.ca/root/les-epicuriens-du-logiciel-test-repo`
     - `git remote add prod ssh://root@les-epicuriens-du-logiciel.ca/root/les-epicuriens-du-logiciel-prod-repo`
 3. Prepare host `ssh root@les-epicuriens-du-logiciel.ca 'bash -s' < prepare-host.sh"`
