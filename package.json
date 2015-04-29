@@ -1,23 +1,19 @@
 {
   "name": "les-epicuriens-du-logiciel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Notre site web",
   "author": "Les Epicuriens du logiciel",
-
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:fperron/les-epicuriens-du-logiciel.git"
   },
-
-  "engines":{
+  "engines": {
     "node": "0.10.36"
   },
-
   "dependencies": {
     "http-server": "^0.7.5",
     "normalize.css": "^3.0.2"
   },
-
   "devDependencies": {
     "digitalocean-api": "^0.1.1",
     "clean-css": "^3.2.5",
@@ -25,28 +21,22 @@
     "jasmine": "^2.2.1",
     "zombie": "^2.5.1"
   },
-
   "scripts": {
-    "clean":"rm -rf dist && mkdir dist",
-
+    "clean": "rm -rf dist && mkdir dist",
     "prebuild": "npm run clean -s",
-    "build":"npm run build:css -s & npm run build:html -s & npm run build:images -s",
+    "build": "npm run build:css -s & npm run build:html -s & npm run build:images -s",
     "build:css": "cleancss src/les-epicuriens-du-logiciel.css > dist/les-epicuriens-du-logiciel.css",
     "build:html": "cp -a src/homepage/index.html dist/index.html",
     "build:images": "mkdir dist/support && cp -a src/support/images dist/support",
-
     "lint": "jshint **/*.js",
     "pretest": "npm run clean -s && npm run lint -s && npm run build -s",
     "test": "jasmine JASMINE_CONFIG_PATH=build/jasmine.json",
-
     "deploy:test": "git push test master",
     "postdeploy:test": "URL='http://les-epicuriens-du-logiciel.ca:8080' jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
     "deploy:prod": "git push prod master",
     "postdeploy:prod": "URL='http://les-epicuriens-du-logiciel.ca' jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
-
     "rollback:dev": "mkdir $1",
-
-    "serve:dev":  "http-server dist -p 5001 -d false -o",
+    "serve:dev": "http-server dist -p 5001 -d false -o",
     "serve:test": "http-server dist -p 8080 -d false",
     "serve:prod": "http-server dist -p 80 -d false"
   }
