@@ -6,7 +6,7 @@
     describe('The home page', function () {
 
         var browser = new Browser();
-        var homePage = 'http://les-epicuriens-du-logiciel.ca:8080';
+        var homePage = process.env.URL;
 
         beforeAll(function (done) {
             browser.visit(homePage, done);

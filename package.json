@@ -41,9 +41,9 @@
     "test2": "jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
 
     "deploy:test": "git push test master",
-    "postdeploy:test": "jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
+    "postdeploy:test": "URL='http://les-epicuriens-du-logiciel.ca:8080' jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
     "deploy:prod": "git push prod master",
-    "postdeploy:prod": "build/check-deploy.sh http://les-epicuriens-du-logiciel.ca",
+    "postdeploy:prod": "URL='http://les-epicuriens-du-logiciel.ca' jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
 
     "serve:dev":  "http-server dist -p 5001 -d false -o",
     "serve:test": "http-server dist -p 8080 -d false",
