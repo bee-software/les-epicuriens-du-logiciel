@@ -38,7 +38,6 @@
     "lint": "jshint **/*.js",
     "pretest": "npm run clean -s && npm run lint -s && npm run build -s",
     "test": "jasmine JASMINE_CONFIG_PATH=build/jasmine.json",
-    "test2": "jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
 
     "deploy:test": "git push test master",
     "postdeploy:test": "URL='http://les-epicuriens-du-logiciel.ca:8080' jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
