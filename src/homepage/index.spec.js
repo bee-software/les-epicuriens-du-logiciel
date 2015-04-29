@@ -10,13 +10,13 @@
         var homePage = 'http://localhost:5001';
         var server;
 
-        beforeEach(function (done) {
+        beforeAll(function (done) {
             server = Server.createServer({root: "dist"});
             server.listen(5001);
             browser.visit(homePage, done);
         });
 
-        afterEach(function () {
+        afterAll(function () {
             server.close();
         });
 
