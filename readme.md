@@ -1,7 +1,7 @@
 ## Setup
 
 1. install node version as per package.json
-2. run `npm rebuild` to build executable for your platform
+2. run `npm rebuild` to build executables for your platform
 
 ## Run, test, deploy
 
