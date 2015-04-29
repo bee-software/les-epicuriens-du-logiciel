@@ -24,12 +24,6 @@ create_git_repo() {
     cd -
 }
 
-# install_git_and_node
+install_git_and_node
 create_git_repo les-epicuriens-du-logiciel test
 create_git_repo les-epicuriens-du-logiciel prod
-
-
-# Run localy
-# git remote add test ssh://root@45.55.185.156/root/les-epicuriens-du-logiciel-test-repo
-# git remote add prod ssh://root@45.55.185.156/root/les-epicuriens-du-logiciel-prod-repo
-# ssh root@45.55.185.156 'bash -s' < prepare-host.sh
