@@ -30,13 +30,13 @@
     "clean":"rm -rf dist && mkdir dist",
 
     "prebuild": "npm run clean -s",
-    "build":"npm run build:css -s && npm run build:html -s && npm run build:images -s",
+    "build":"npm run build:css -s & npm run build:html -s & npm run build:images -s",
     "build:css": "cleancss src/les-epicuriens-du-logiciel.css > dist/les-epicuriens-du-logiciel.css",
     "build:html": "cp -a src/homepage/index.html dist/index.html",
-    "build:images": "cp -a src/support dist/",
+    "build:images": "mkdir dist/support && cp -a src/support/images dist/support",
 
     "lint": "jshint **/*.js",
-    "pretest": "npm run lint -s && npm run build -s",
+    "pretest": "npm run clean -s && npm run lint -s && npm run build -s",
     "test": "jasmine JASMINE_CONFIG_PATH=build/jasmine.json",
     "test2": "jasmine JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
 
