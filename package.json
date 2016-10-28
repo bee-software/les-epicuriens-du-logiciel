@@ -8,20 +8,17 @@
     "type": "git",
     "url": "git@github.com:les-epicuriens-du-logiciel/les-epicuriens-du-logiciel.git"
   },
-  "engines": {
-    "node": "0.10.36"
-  },
   "dependencies": {
-    "http-server": "^0.7.5",
-    "normalize.css": "^3.0.2"
+    "http-server": "^0.9.0",
+    "normalize.css": "^5.0.0"
   },
   "devDependencies": {
     "clean-css": "^3.2.5",
     "digitalocean-api": "^0.1.1",
-    "html-minifier": "^0.7.2",
+    "html-minifier": "^3.1.0",
     "jasmine": "^2.2.1",
     "jshint": "^2.7.0",
-    "zombie": "^2.5.1"
+    "zombie": "^4.3.0"
   },
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",

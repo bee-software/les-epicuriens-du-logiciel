@@ -3,6 +3,7 @@
 npm-debug.log
 
 # rebuild with 'npm rebuild'
+node_modules/**/.bin/
 node_modules/zombie/node_modules/ws/builderror.log
 node_modules/zombie/node_modules/jsdom/node_modules/contextify/build/
 node_modules/zombie/node_modules/ws/build/
