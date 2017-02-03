@@ -12,8 +12,8 @@
             browser.visit(homePage, done);
         });
 
-        it('Title is Les Épicuriens du logiciel', function () {
-            browser.assert.text('title', 'Les Épicuriens du logiciel');
+        it('Title is Bee', function () {
+            browser.assert.text('title', 'Bee');
         });
 
         it('Has the jumbotron section', function () {

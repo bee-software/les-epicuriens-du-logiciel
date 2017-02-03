@@ -7,12 +7,12 @@
     describe('The home page', function () {
 
         var browser = new Browser();
-        var homePage = 'http://localhost:5001';
+        var homePage = 'http://localhost:8080';
         var server;
 
         beforeAll(function (done) {
             server = Server.createServer({root: "dist"});
-            server.listen(5001);
+            server.listen(8080);
             browser.visit(homePage, done);
         });
 
@@ -20,8 +20,8 @@
             server.close();
         });
 
-        it('Title is Les Épicuriens du logiciel', function () {
-            browser.assert.text('title', 'Les Épicuriens du logiciel');
+        it('Title is LBee', function () {
+            browser.assert.text('title', 'Bee');
         });
 
         it('Has the jumbotron section', function () {
