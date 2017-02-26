@@ -37,7 +37,7 @@
     "rollback:test": "build/rollback.sh test $1",
     "rollback:prod": "build/rollback.sh prod $1",
     "serve:dev": "http-server dist -p 8080 -d false -o",
-    "serve:test": "http-server dist -p 8080 -d false",
-    "serve:prod": "http-server dist -p 80 -d false"
+    "serve:test": "http-server dist -p 9090 -d false",
+    "serve:prod": "http-server dist -p 8080 -d false"
   }
 }
