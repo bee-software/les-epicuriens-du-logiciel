@@ -1,4 +1,5 @@
-.idea/workspace.xml
+*.iml
+/.idea
 /dist
 npm-debug.log
 

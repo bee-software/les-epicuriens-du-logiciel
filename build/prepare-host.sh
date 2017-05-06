@@ -25,5 +25,5 @@ create_git_repo() {
 }
 
 install_git_and_node
-create_git_repo les-epicuriens-du-logiciel test
-create_git_repo les-epicuriens-du-logiciel prod
+create_git_repo bee-software test
+create_git_repo bee-software prod

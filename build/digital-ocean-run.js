@@ -11,6 +11,6 @@
     var droplet = new Droplet(api);
     droplet.getAll();
 
-    //droplet.create('les-epicuriens-du-logiciel');
+    //droplet.create('bee.software');
 }());
 
