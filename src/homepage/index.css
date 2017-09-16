@@ -157,19 +157,25 @@ p {
     }
 
     .jumbotron {
-        height: 250px;
+        height: 300px;
     }
 
     .jumbotron__space {
-        height: 250px;
+        height: 300px;
+    }
+
+    .logo {
+        position: absolute;
     }
 
     .logo__img {
         max-height: 200px;
+        display: block;
+        margin: 0 auto;
     }
 
     .banniere {
-        margin-top: 25px;
+        margin-top: 125px;
         text-align:center;
     }
 
