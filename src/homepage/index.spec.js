@@ -35,8 +35,5 @@
         it('Has the valeur section', function () {
             browser.assert.element('section.valeur');
         });
-        it('Has a footer', function () {
-            browser.assert.element('footer');
-        });
     });
 }());

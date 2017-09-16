@@ -12,10 +12,6 @@
             browser.visit(homePage, done);
         });
 
-        it('Title is Bee', function () {
-            browser.assert.text('title', 'Bee');
-        });
-
         it('Has the jumbotron section', function () {
             browser.assert.element('section.jumbotron');
         });
@@ -26,9 +22,6 @@
 
         it('Has the valeur section', function () {
             browser.assert.element('section.valeur');
-        });
-        it('Has a footer', function () {
-            browser.assert.element('footer');
         });
     });
 }());
