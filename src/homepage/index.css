@@ -25,9 +25,12 @@ p {
 }
 
 .logo {
-    padding-right: 50px;
-    padding-left: 50px;
+    position: relative;
+}
+
+.logo__img {
     max-height: 300px;
+    float: right;
 }
 
 .banniere {
@@ -161,7 +164,7 @@ p {
         height: 250px;
     }
 
-    .logo {
+    .logo__img {
         max-height: 200px;
     }
 
