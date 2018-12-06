@@ -11,8 +11,9 @@
 ## Deploy
 
 1. Create version and tag commit `npm version patch|minor|major -m "tag message"`
-2. Deploy and run smoke tests `npm run deploy:test|prod`
-3. When needed, rollback `npm run rollback:test|prod -- tag-name`
+2. Commit to origin `git push --follow-tags`
+3. Deploy and run smoke tests `npm run deploy:test|prod`
+4. When needed, rollback `npm run rollback:test|prod -- tag-name`
 
 ## Setup host
 
