@@ -1,6 +1,6 @@
 {
   "name": "bee.software",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Notre site web",
   "author": "Bee",
   "license": "ISC",
@@ -24,19 +24,15 @@
     "build:css": "cleancss src/main.css > dist/main.css",
     "build:html": "html-minifier --config-file build/html-minifier.config src/homepage/index.html > dist/index.html",
     "build:images": "mkdir dist/support && cp -a src/support/images dist/support",
-
     "lint": "jshint **/*.js",
     "pretest": "npm run clean -s && npm run lint -s && npm run build -s",
     "test": "jasmine JASMINE_CONFIG_PATH=build/jasmine.json",
-
     "deploy:test": "git push test master --follow-tags",
     "postdeploy:test": "jasmine URL='http://bee.software:9090' JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
     "rollback:test": "build/rollback.sh test $1",
-
     "deploy:prod": "git push prod master --follow-tags",
     "postdeploy:prod": "jasmine URL='https://bee.software' JASMINE_CONFIG_PATH=build/jasmine-smoke-test.json",
     "rollback:prod": "build/rollback.sh prod $1",
-
     "serve:dev": "http-server dist -p 8080 -d false -o",
     "serve:test": "http-server dist -p 9090 -d false",
     "serve:prod": "http-server dist -p 8080 -d false"
