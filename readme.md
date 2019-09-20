@@ -22,3 +22,8 @@
     - `git remote add test ssh://root@bee.software/root/bee-software-test-repo`
     - `git remote add prod ssh://root@bee.software/root/bee-software-prod-repo`
 3. Prepare host `ssh root@bee.software 'bash -s' < prepare-host.sh`
+
+## Create image
+
+1. Place original image in /images
+2. Convert it to base64 (https://varvy.com/tools/base64/up.php works well)
