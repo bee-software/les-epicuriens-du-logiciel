@@ -9,11 +9,11 @@
   },
   "devDependencies": {
     "clean-css": "4.2.1",
-    "clean-css-cli": "4.2.1",
+    "clean-css-cli": "4.3.0",
     "digitalocean-api": "0.1.1",
-    "html-minifier": "3.5.21",
+    "html-minifier": "4.0.0",
     "normalize.css": "8.0.1",
-    "jasmine": "3.3.1",
+    "jasmine": "3.5.0",
     "jshint": "2.10.2",
     "zombie": "6.1.4"
   },
