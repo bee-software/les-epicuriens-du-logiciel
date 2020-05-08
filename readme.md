@@ -26,4 +26,4 @@
 ## Create image
 
 1. Place original image in /images
-2. Convert it to base64 (https://varvy.com/tools/base64/up.php works well)
+2. Convert it to base64 (https://www.base64-image.de/ works well)
